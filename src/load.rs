@@ -100,7 +100,8 @@ impl crate::cuda::CudaApi {
         let paths = find_cuda_lib_dirs();
         let libcuda = paths
             .iter()
-            .find(|path| path.join("libcuda.so").exists())
+            .map(|path| path.join("libcuda.so"))
+            .find(|path| path.exists())
             .unwrap();
         unsafe { Self::new(libcuda) }
     }
