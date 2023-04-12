@@ -16,5 +16,6 @@ bindgen \
   --with-derive-eq \
   --with-derive-hash \
   --with-derive-ord \
+  --dynamic-loading CudaApi\
   wrapper.h -- -I/opt/cuda/include \
   > src/cuda.rs
