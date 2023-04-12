@@ -1,6 +1,3 @@
-# cust_raw 
+# cuda-rs
 
-Raw bindings to the CUDA Driver API used by cust. These bindings are actively updated for new versions. 
-We use our own bindings so we have more control over when they get updated and what they contain. 
-
-Current version is based on CUDA 11.2
+Dynamically loaded bindings to the CUDA API generated with bindgen.
