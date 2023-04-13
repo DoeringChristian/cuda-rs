@@ -13,7 +13,7 @@ impl Display for CudaError {
 }
 
 impl cudaError_enum {
-    pub fn ok(self) -> Result<(), CudaError> {
+    pub fn check(self) -> Result<(), CudaError> {
         if self == cudaError_enum::CUDA_SUCCESS {
             Ok(())
         } else {
