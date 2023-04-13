@@ -1,4 +1,5 @@
 #![allow(warnings)]
+#![feature(try_trait_v2)]
 
 mod cuda;
 mod cuda_result;
