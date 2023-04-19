@@ -11,7 +11,6 @@ bindgen \
   --allowlist-var="^CU.*" \
   --allowlist-function="^cu.*" \
   --default-enum-style=rust \
-  --no-doc-comments \
   --with-derive-default \
   --with-derive-eq \
   --with-derive-hash \
